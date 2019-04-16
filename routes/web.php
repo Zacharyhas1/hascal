@@ -12,7 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $galleryCategories = [
+        'Design',
+        'Software',
+        'Woodworking',
+    ];
+
+    return view('welcome', [
+        'categories' => $galleryCategories
+    ]);
 });
 
 Route::get('/about', function () {

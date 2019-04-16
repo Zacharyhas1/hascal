@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    <title></title>
+    <title>@yield('title', 'Zach Collins')</title>
 </head>
 
 <body>
